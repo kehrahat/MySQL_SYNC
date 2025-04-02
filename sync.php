@@ -3,7 +3,7 @@
 $local_db = new mysqli("localhost", "local_user", "local_password", "local_database");
 $cloud_db = new mysqli("cloud_host", "cloud_user", "cloud_password", "cloud_database");
 
-// Check connection
+// Check connection 
 if ($local_db->connect_error || $cloud_db->connect_error) {
     die("Connection failed: " . $local_db->connect_error . " | " . $cloud_db->connect_error);
 }
